@@ -11,14 +11,13 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { HydrateClient } from "@/trpc/server";
+import {Projects} from "@/data/projects-array";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a"> & { title: string, href: string }
 >(({ className, title, children, ...props }, ref) => {
   return (
-    <HydrateClient>
       <li>
         <NavigationMenuLink asChild>
           <Link
@@ -36,7 +35,6 @@ const ListItem = React.forwardRef<
           </Link>
         </NavigationMenuLink>
       </li>
-    </HydrateClient>
   );
 });
 ListItem.displayName = "ListItem";
@@ -55,29 +53,6 @@ export function NavBar() {
                   Home
                 </NavigationMenuLink>
               </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                Projects
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul className="grid gap-3 p-6  lg:grid-cols-[.75fr_1fr] list-none">
-                  <li className="row-span-3">
-                    <NavigationMenuLink asChild>
-                      <Link
-                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                        href="/tools">
-                        <div className="mb-2 mt-4 text-lg font-medium">
-                          Projects
-                        </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
-                          Look at the projects I&apos;ve worked on
-                        </p>
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
