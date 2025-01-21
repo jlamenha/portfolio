@@ -1,53 +1,67 @@
 import Link from "next/link";
+import { type Metadata } from "next";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
+import { Projects } from "@/data/projects-array";
 
-import { LatestPost } from "@/app/_components/post";
-import { api, HydrateClient } from "@/trpc/server";
+export const metadata: Metadata = {
+  title: "Lucas Lamenha — Portfolio",
+  description: "Lucas Lamenha's portfolio"
+}
 
 export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
-
-  void api.post.getLatest.prefetch();
-
   return (
-    <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-        <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-            Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-          </h1>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/usage/first-steps"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">First Steps →</h3>
-              <div className="text-lg">
-                Just the basics - Everything you need to know to set up your
-                database and authentication.
-              </div>
-            </Link>
-            <Link
-              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"
-              href="https://create.t3.gg/en/introduction"
-              target="_blank"
-            >
-              <h3 className="text-2xl font-bold">Documentation →</h3>
-              <div className="text-lg">
-                Learn more about Create T3 App, the libraries it uses, and how
-                to deploy it.
-              </div>
-            </Link>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-2xl text-white">
-              {hello ? hello.greeting : "Loading tRPC query..."}
-            </p>
-          </div>
+    <main className="flex flex-col items-center justify-center">
+      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
+        <h1 className="text-5xl font-extrabold tracking-tight"> Welcome to Lucas Lamenha&apos;s Portfolio! </h1>
+      </div>
+      <div className="container flex flex-col items-center justify-center gap-12">
+        <div className="w-[70vw]">
 
-          <LatestPost />
+          <Card>
+            <CardTitle className="p-6 pb-0">
+              Who am I?
+            </ CardTitle>
+            <CardContent className="p-10 pt-0 text-justify">
+              I am a Computer Science Bachelor Student and Artificial Intelligence Master&apos;s Student from Worcester Polytechnic Institute who has a special interest in Artificial Intelligence, Software Engineering, Database Development and Data Science. I made this website to display some of the projects that I&apos;ve worked on.
+            </ CardContent>
+          </Card>
         </div>
-      </main>
-    </HydrateClient>
+        <div className = "p-6">
+          <Card>
+          <CardContent className="p-10 pt-3 text-justify">
+            Please bear with me, this website is still under construction :)
+          </CardContent>
+          </Card>
+        </div>
+        </div>
+
+    <div className="space-y-0.5">
+      <h1 className="text-2xl font-bold tracking-tight text-center">Projects</h1>
+      <p className="text-muted-foreground text-center pb-3"> These are the projects I&apos;ve worked on </p>
+    </div>
+  
+  
+
+  <div className="flex flex-wrap gap-2">
+        {Projects.map((project) => (
+          <Link key={project.title} href={project.link}>
+            <Card className="aspect-square w-64 transition-shadow duration-300 hover:shadow-lg">
+              <CardHeader>
+                <CardTitle>{project.title}</CardTitle>
+                <CardDescription>{project.desc}</CardDescription>
+              </CardHeader>
+            </Card>
+          </Link>
+        ))}
+      </div>
+        
+
+    </main>
   );
 }
