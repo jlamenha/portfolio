@@ -4,14 +4,11 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/theme-toggle";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import {Projects} from "@/data/projects-array";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

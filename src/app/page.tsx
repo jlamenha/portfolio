@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Projects } from "@/data/projects-array";
-import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
   title: "Lucas Lamenha — Portfolio",
@@ -44,7 +43,7 @@ export default async function Home() {
 
     <div className="space-y-0.5">
       <h1 className="text-2xl font-bold tracking-tight text-center">Projects</h1>
-      <p className="text-muted-foreground text-center pb-3"> These are the projects I've worked on </p>
+      <p className="text-muted-foreground text-center pb-3"> These are the projects I&apos;ve worked on </p>
     </div>
   
   
