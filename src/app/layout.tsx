@@ -20,14 +20,12 @@ export default function RootLayout({
       <body>
         <TRPCReactProvider>
           <Toaster />
-          
             <div className="flex flex-col w-full min-h-screen">
               <NavBar />
               <div className="flex-grow bg-muted/40">
                 {children}
               </div>
             </div>
-          
         </TRPCReactProvider>
       </body>
     </html>
