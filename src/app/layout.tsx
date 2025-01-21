@@ -21,11 +21,8 @@ export default function RootLayout({
       <body>
         <TRPCReactProvider>
           <Toaster />
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-          >
+          
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <div className="flex flex-col w-full min-h-screen">
               <NavBar />
               <div className="flex-grow bg-muted/40">
@@ -33,6 +30,7 @@ export default function RootLayout({
               </div>
             </div>
           </ ThemeProvider>
+          
         </TRPCReactProvider>
       </body>
     </html>
