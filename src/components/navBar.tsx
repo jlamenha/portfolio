@@ -1,7 +1,6 @@
 import * as React from "react"
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { ModeToggle } from "@/components/theme-toggle";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -53,9 +52,6 @@ export function NavBar() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-      </div>
-      <div className="pr-4 z-1000">
-        <ModeToggle />
       </div>
     </header>
   )

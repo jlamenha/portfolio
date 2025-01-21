@@ -4,7 +4,6 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { NavBar } from "@/components/navBar";
 import { TRPCReactProvider } from "@/trpc/react";
-import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
@@ -22,14 +21,12 @@ export default function RootLayout({
         <TRPCReactProvider>
           <Toaster />
           
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
             <div className="flex flex-col w-full min-h-screen">
               <NavBar />
               <div className="flex-grow bg-muted/40">
                 {children}
               </div>
             </div>
-          </ ThemeProvider>
           
         </TRPCReactProvider>
       </body>
