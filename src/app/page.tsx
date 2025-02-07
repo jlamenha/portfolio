@@ -32,23 +32,23 @@ export default async function Home() {
             </ CardContent>
           </Card>
         </div>
-        <div className = "p-6">
+        <div className="p-6">
           <Card>
-          <CardContent className="p-10 pt-3 text-justify">
-            Please bear with me, this website is still under construction :)
-          </CardContent>
+            <CardContent className="p-10 pt-3 text-justify">
+              Please bear with me, this website is still under construction :)
+            </CardContent>
           </Card>
         </div>
-        </div>
+      </div>
 
-    <div className="space-y-0.5">
-      <h1 className="text-2xl font-bold tracking-tight text-center">Projects</h1>
-      <p className="text-muted-foreground text-center pb-3"> These are the projects I&apos;ve worked on </p>
-    </div>
-  
-  
+      <div className="space-y-0.5">
+        <h1 className="text-2xl font-bold tracking-tight text-center">Projects</h1>
+        <p className="text-muted-foreground text-center pb-3"> These are the projects I&apos;ve worked on </p>
+      </div>
 
-  <div className="flex flex-wrap gap-2">
+
+
+      <div className="flex flex-wrap gap-2 pb-5">
         {Projects.map((project) => (
           <Link key={project.title} href={project.link}>
             <Card className="aspect-square w-64 transition-shadow duration-300 hover:shadow-lg">
@@ -60,7 +60,7 @@ export default async function Home() {
           </Link>
         ))}
       </div>
-        
+
 
     </main>
   );

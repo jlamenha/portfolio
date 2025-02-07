@@ -1,9 +1,9 @@
 
 
-export default async function ChatVPCPage() {
-  return(
+export default async function SNAPTPage() {
+  return (
 
-  <p className="text-center"> Non c&apos;è ancora niente qui </p>
+    <p className="text-center"> Non c&apos;è ancora niente qui </p>
   )
 }
 

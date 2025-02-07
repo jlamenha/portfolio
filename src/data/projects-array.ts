@@ -14,9 +14,9 @@ export const Projects: Array<ProjectCards> = [
     githubLink: "https://github.com/alexsiracusa/DB-MQP"
   },
   {
-    title: "Evaluating SNAPT",
-    desc: "Evaluating the quality of queries translated and optimizing translations done by SNAPT - a continuation project",
-    link: "esnapt",
+    title: "SNAPTPlus",
+    desc: "Expanding the capabilities of SNAPT to text-to-SQL capabilities, query correction, and multi-module generation",
+    link: "snaptplus",
     githubLink: ""
   },
   {
