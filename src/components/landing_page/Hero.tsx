@@ -6,7 +6,7 @@ export default function Hero() {
     >
       <div className="max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-          Hi, I'm <span className="text-indigo-400">Lucas Lamenha</span>
+          Hi, I&apos;m <span className="text-indigo-400">Lucas Lamenha</span>
         </h1>
         <p className="text-lg md:text-2xl text-gray-300 mb-8">
           Full-stack Developer focused on AI-powered applications.
