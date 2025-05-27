@@ -16,13 +16,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
+    <html lang="en" className={`${GeistSans.variable} dark`}>
       <body>
         <TRPCReactProvider>
           <Toaster />
             <div className="flex flex-col w-full min-h-screen">
               <NavBar />
-              <div className="flex-grow bg-muted/40">
+              <div className="flex-grow bg-muted">
                 {children}
               </div>
             </div>
