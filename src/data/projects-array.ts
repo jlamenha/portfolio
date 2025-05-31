@@ -16,7 +16,7 @@ export const Projects: Array<ProjectCards> = [
   // {
   //   title: "Evaluating SNAPT",
   //   desc: "Evaluating the quality of queries translated and optimizing translations done by SNAPT - a continuation project",
-  //   link: "esnapt",
+  //   link: "snaptplus",
   //   githubLink: ""
   // },
   // {
@@ -30,5 +30,11 @@ export const Projects: Array<ProjectCards> = [
     desc: "A Reinforcement Learning vs Imitation Learning implementation of a Snake Game automation",
     link: "copyconda",
     githubLink: "https://github.com/keiraSchoolcraft/Snake-Game-Data-Collection"
-  }
+  },
+    {
+    title: "Sous-Chef",
+    desc: "A smart kitchen assistant that helps users manage food inventory and generate recipes",
+    link: "souschef",
+    githubLink: "https://github.com/keiraSchoolcraft/Sous-Chef"
+  },
 ]

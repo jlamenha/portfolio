@@ -3,7 +3,7 @@ import { Github } from "lucide-react";
 
 interface ProjectSection {
   heading: string;
-  content: string;
+  content: string | React.ReactElement;
 }
 
 interface ProjectPageProps {

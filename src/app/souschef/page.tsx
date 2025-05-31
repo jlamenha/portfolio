@@ -1,13 +1,13 @@
 import ProjectPage from "@/components/project_page/ProjectPage"
 
-export default async function CopyCondaPage() {
+export default async function SousChefPage() {
   return(
   <ProjectPage
-  title="CopyConda"
-  description="Reinforcement Learning vs Imitation Learning Snake Game"
+  title="Sous-Chef"
+  description="A smart kitchen assistant that helps users manage food inventory and generate recipes based on available ingredients using AI"
   tech={["Machine Learning", "Python", "Reinforcement Learning", "Imitation Learning", "PyTorch", "Deep Q-Networks"]}
-  githubLink="https://github.com/keiraSchoolcraft/Snake-Game-Data-Collection"
-  pdfUrl="/pdfs/copyconda.pdf"
+  githubLink="https://github.com/keiraSchoolcraft/Sous-Chef"
+  pdfUrl=""
   sections={[
     {
       heading: "Motivation",
@@ -18,36 +18,21 @@ export default async function CopyCondaPage() {
       content: "By the end, a Deep Q-Network (DQN) and an Imitation Learning pipeline were developed and compared against each other. This project strengthened the use of the Reinforcement Learning paradigm over traditional Machine Learning. While the Reinforcement Learning (DQN) model was able to achieve results over 20 points consistently, the Imitation Learning model struggled to achieve even 2 points in a single game."
     },
     {
-      heading: "Presentation",
-      content: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ9G9ZH7wseMgS4ra27wVF0g3TeFg0SXvOWvgngrxjfdKc7RLi_EEWOH0hyGB34cPA1wS_FnvRC8kqW/pubembed?start=false&loop=false&delayms=3000" frameBorder="0" width="960" height="569" allowFullScreen={true}></iframe>
+        heading: "Presentation",
+        content: <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQlcRGPyT7zC1c5Y35etqNOPkvlUXz6_l4qfK3VPf94n3rbHQAoTsoPTH5A7FncrpbEzu9s3Zfk7_Yj/pubembed?start=false&loop=false&delayms=3000" frameBorder="0" width="960" height="569" allowFullScreen={true}></iframe>
     },
     {
-      heading: "Videos",
-      content:<div> 
-        <p className="text-gray-300 leading-relaxed whitespace-pre-line">
-              <iframe
-                src="https://drive.google.com/file/d/1My7SDG93BGcydFXf5KvCAv5oFHsH5r4U/preview"
-                width="100%"
-                height="480"
-                allow="autoplay"
-                allowFullScreen
-                className="rounded-lg"
-                />
-                </p>
-                <p className="text-gray-300 leading-relaxed whitespace-pre-line">
-                <iframe
-                        src="https://drive.google.com/file/d/1DC68huHBBPbVZkEmfsGe5Hjro125EfBS/preview"
+        heading: "Videos",
+        content: <iframe
+                        src="https://drive.google.com/file/d/1wpUQ4XXavz-GwrvjiV6lnS5Fpk5tI66G/preview"
                         width="100%"
                         height="480"
                         allow="autoplay"
                         allowFullScreen
                         className="rounded-lg"
                         />
-                        </p>
-                </div>     
     },
   ]}
 />
-
   )
 }
