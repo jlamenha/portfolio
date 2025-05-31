@@ -82,16 +82,7 @@ export default function ProjectPage({
           </div>
         )}
 
-        {/* PDF Viewer */}
-        {pdfUrl && (
-          <div className="w-full h-[600px] border border-zinc-700 rounded-md overflow-hidden">
-            <iframe
-              src={pdfUrl}
-              className="w-full h-full"
-              title="Project PDF"
-            />
-          </div>
-        )}
+        
 
         {/* Sections */}
         {Array.isArray(sections) && sections.length > 0 && (
@@ -104,6 +95,21 @@ export default function ProjectPage({
                 </p>
               </div>
             ))}
+          </div>
+        )}
+
+        {/* PDF Viewer */}
+        {pdfUrl && (
+          <div>
+          <h2 className="text-2xl font-semibold mb-2">Report</h2>
+          <div className="w-full h-[600px] border border-zinc-700 rounded-md overflow-hidden">
+            
+            <iframe
+              src={pdfUrl}
+              className="w-full h-full"
+              title="Project PDF"
+            />
+          </div>
           </div>
         )}
         </div>
