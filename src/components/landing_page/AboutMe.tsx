@@ -23,7 +23,7 @@ export default function About() {
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
             I’m Lucas Lamenha — a full-stack developer with a passion for building
             intelligent, AI-powered applications. I specialize in combining robust backend systems
-            with modern frontend technologies to create seamless digital experiences. Currently pursuing both a Bachelor&apos;
+            with modern frontend technologies to create seamless digital experiences. Currently pursuing both a Bachelor&apos;s
             and a Master&apos;s degree in Computer Science and Artificial Intelligence at Worcester Polytechnic Institute (WPI),
              I love tackling problems at the intersection of data, design, and engineering.
           </p>
