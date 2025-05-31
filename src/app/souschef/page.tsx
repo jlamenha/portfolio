@@ -5,17 +5,17 @@ export default async function SousChefPage() {
   <ProjectPage
   title="Sous-Chef"
   description="A smart kitchen assistant that helps users manage food inventory and generate recipes based on available ingredients using AI"
-  tech={["Machine Learning", "Python", "Reinforcement Learning", "Imitation Learning", "PyTorch", "Deep Q-Networks"]}
+  tech={["React Native","Expo", "SQLite","TypeScript", "Python FastAPI", "OpenCV", "Computer Vision", "LLMs"]}
   githubLink="https://github.com/keiraSchoolcraft/Sous-Chef"
   pdfUrl=""
   sections={[
     {
       heading: "Motivation",
-      content: `In the realm of Machine Learning, the Snake Game has been a target for multiple researchers attempting to make a computer beat the game. Often, the paradigm that is used for this is Reinforcement Learning. For this project, Reinforcement Learning was compared with Imitation Learning to compare the results. `,
+      content: `It can be hard to figure out what to eat based on what you have at home. Sous Chef aims to help with that by using Artificial Intelligence paired with Computer Vision to help the user not have to worry about this anymore!`,
     },
     {
       heading: "Results",
-      content: "By the end, a Deep Q-Network (DQN) and an Imitation Learning pipeline were developed and compared against each other. This project strengthened the use of the Reinforcement Learning paradigm over traditional Machine Learning. While the Reinforcement Learning (DQN) model was able to achieve results over 20 points consistently, the Imitation Learning model struggled to achieve even 2 points in a single game."
+      content: "For this project, a React Native app was developed with an SQLite local database to store the user's groceries. The user can input groceries into the app — either by typing it in, or using the Computer Vision OpenCV algorithm to recognize it — and generate a recipe from what the user has at home using Google's Gemini Large Language Model."
     },
     {
         heading: "Presentation",
