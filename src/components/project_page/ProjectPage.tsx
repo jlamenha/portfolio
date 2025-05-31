@@ -40,7 +40,7 @@ export default function ProjectPage({
       {/* Content */}
       <div className="relative z-10 px-6 py-16 max-w-4xl mx-auto space-y-12">
         {/* Title & Description */}
-        {(title || description) && (
+        {(title ?? description) && (
           <div className="space-y-4 text-center">
             {title && <h1 className="text-4xl md:text-5xl font-bold">{title}</h1>}
             {description && <p className="text-lg text-gray-300">{description}</p>}
