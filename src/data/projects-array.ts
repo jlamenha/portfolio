@@ -25,5 +25,10 @@ export const Projects: Array<ProjectCards> = [
   //   link: "hospital",
   //   githubLink: ""
   // }
-
+  {
+    title: "CopyConda",
+    desc: "A Reinforcement Learning vs Imitation Learning implementation of a Snake Game automation",
+    link: "copyconda",
+    githubLink: "https://github.com/keiraSchoolcraft/Snake-Game-Data-Collection"
+  }
 ]
