@@ -13,17 +13,23 @@ export const Projects: Array<ProjectCards> = [
     link: "snapt",
     githubLink: "https://github.com/alexsiracusa/DB-MQP"
   },
+  // If you're seeing this, I am not adding SNAPTPlus until my Thesis Advisors allow me to
   // {
-  //   title: "Evaluating SNAPT",
+  //   title: "SNAPT Plus",
   //   desc: "Evaluating the quality of queries translated and optimizing translations done by SNAPT - a continuation project",
-  //   link: "esnapt",
-  //   githubLink: ""
-  // },
-  // {
-  //   title: "Hospital Web Application",
-  //   desc: "A formative class project on a Web-application developed for a hospital",
-  //   link: "hospital",
+  //   link: "snaptplus",
   //   githubLink: ""
   // }
-
+  {
+    title: "CopyConda",
+    desc: "A Reinforcement Learning vs Imitation Learning implementation of a Snake Game automation",
+    link: "copyconda",
+    githubLink: "https://github.com/keiraSchoolcraft/Snake-Game-Data-Collection"
+  },
+    {
+    title: "Sous-Chef",
+    desc: "A smart kitchen assistant that helps users manage food inventory and generate recipes",
+    link: "souschef",
+    githubLink: "https://github.com/keiraSchoolcraft/Sous-Chef"
+  },
 ]

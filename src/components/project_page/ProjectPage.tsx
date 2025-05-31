@@ -3,7 +3,7 @@ import { Github } from "lucide-react";
 
 interface ProjectSection {
   heading: string;
-  content: string;
+  content: string | React.ReactElement;
 }
 
 interface ProjectPageProps {
@@ -25,13 +25,7 @@ export default function ProjectPage({
 }: ProjectPageProps) {
   return (
         <section className="relative min-h-screen text-white bg-black">
-        {/* Bottom Gradient Accent */}
-        <div
-            className="absolute bottom-0 left-0 w-full h-64 -z-10"
-            style={{
-            background: "linear-gradient(to top, #312e81, transparent)",
-            }}
-        />
+        
 
 
         {/* Main content */}
