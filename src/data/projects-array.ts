@@ -3,7 +3,7 @@ import type { ProjectCards } from "@/types/project-cards";
 export const Projects: Array<ProjectCards> = [
   {
     title: "ChatVPC",
-    desc: "Leveraging Artificial Intelligence for Academic Collaboration in Venice, Italy",
+    desc: "Leveraging AI for Academic Collaboration in Venice, Italy",
     link: "chatvpc",
     githubLink: "https://github.com/v2024b-ai/chatbot-website"
   },
@@ -13,17 +13,17 @@ export const Projects: Array<ProjectCards> = [
     link: "snapt",
     githubLink: "https://github.com/alexsiracusa/DB-MQP"
   },
-  {
-    title: "Evaluating SNAPT",
-    desc: "Evaluating the quality of queries translated and optimizing translations done by SNAPT - a continuation project",
-    link: "esnapt",
-    githubLink: ""
-  },
-  {
-    title: "Hospital Web Application",
-    desc: "A formative class project on a Web-application developed for a hospital",
-    link: "hospital",
-    githubLink: ""
-  }
+  // {
+  //   title: "Evaluating SNAPT",
+  //   desc: "Evaluating the quality of queries translated and optimizing translations done by SNAPT - a continuation project",
+  //   link: "esnapt",
+  //   githubLink: ""
+  // },
+  // {
+  //   title: "Hospital Web Application",
+  //   desc: "A formative class project on a Web-application developed for a hospital",
+  //   link: "hospital",
+  //   githubLink: ""
+  // }
 
 ]

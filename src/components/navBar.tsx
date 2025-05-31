@@ -6,8 +6,11 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuContent,
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import { Projects } from "@/data/projects-array";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -54,6 +57,25 @@ export function NavBar() {
                     Home
                   </NavigationMenuLink>
                 </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-transparent text-white hover:text-indigo-400 hover:bg-zinc-800">
+                  Projects
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[300px] gap-2 p-4">
+                    {Projects.map((project) => (
+                      <ListItem
+                        key={project.title}
+                        title={project.title}
+                        href={`/${project.link}`}
+                      >
+                        {project.desc}
+                      </ListItem>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
